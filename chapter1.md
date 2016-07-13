@@ -110,7 +110,7 @@ class MyService extends Service
 `focusChange`参数会返回当前的焦点状态
 
 * AUDIOFOCUS_GAIN 当前获取到焦点
-* AUDIOFOCUS_LOSS 当前失去焦点，你需要停止当前音乐播放。
+* AUDIOFOCUS_LOSS 当前失去焦点，你需要停止当前音乐播放，并且释放资源
 
 
 这里有涉及到一个`remote service` or `local service`，以下是我自己使用过程中的体会（以下都是基于Nexus4，OSVsersion 4.4）：
