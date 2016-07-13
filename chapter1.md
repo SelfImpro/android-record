@@ -206,7 +206,7 @@ public class MediaButtonIntentReceiver extends WakefulBroadcastReceiver {
     @Override
     public void onReceive(final Context context, final Intent intent) {
         if (Intent.ACTION_MEDIA_BUTTON.equals(intentAction)){
-        
+            
         }
     }
 }
