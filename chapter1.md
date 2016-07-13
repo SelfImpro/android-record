@@ -202,6 +202,8 @@ public class MusicIntentReceiver extends android.content.BroadcastReceiver {
 
 ```
 public class MediaButtonIntentReceiver extends WakefulBroadcastReceiver {
+  
+
 }
 ```
 
