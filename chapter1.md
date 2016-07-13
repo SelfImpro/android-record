@@ -96,7 +96,9 @@ if (result != AudioManager.AUDIOFOCUS_REQUEST_GRANTED) {
 }
 ```
 同时还要注册焦点事件
+```
 
+```
 
 
 
