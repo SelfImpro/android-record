@@ -95,6 +95,7 @@ if (result != AudioManager.AUDIOFOCUS_REQUEST_GRANTED) {
     // could not get audio focus.
 }
 ```
+同时还要注册焦点事件
 
 
 
