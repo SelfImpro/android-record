@@ -87,7 +87,13 @@ stopForeground();
 ##处理audio焦点
 对于一个音乐播放器，焦点的处理显得尤为重要。否则就是个坑。在播放音乐之前要先申请焦点，确认是否可以播放
 ```
+AudioManager audioManager = (AudioManager) getSystemService(Context.AUDIO_SERVICE);
+int result = audioManager.requestAudioFocus(this, AudioManager.STREAM_MUSIC,
+    AudioManager.AUDIOFOCUS_GAIN);
 
+if (result != AudioManager.AUDIOFOCUS_REQUEST_GRANTED) {
+    // could not get audio focus.
+}
 ```
 
 
