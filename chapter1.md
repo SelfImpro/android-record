@@ -9,7 +9,7 @@
 这两个类的关系有点类似Soldier和Commander的关系，soldier只负责打战，至于打哪里，什么时候开火都需要Commander来统一调度。
 
 
-##清单文件配置
+#清单文件配置
 在使用MediaPlayer时，用到一些featrue，需要在清单文件中声明。
 
 * **Internet Permission** 如果播放的是网络资源时需要。
@@ -20,6 +20,8 @@
   ```
   <uses-permission android:name="android.permission.WAKE_LOCK" />
   ```
+  
+  
 
 
 
