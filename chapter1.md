@@ -34,7 +34,7 @@
 
 #后台播放
 
-关于应用后台播放应用需要使用Service，这里有涉及到一个`remote service` or `local service`，以下是我自己使用过程中的体会：
+关于应用后台播放应用需要使用Service，这里有涉及到一个`remote service` or `local service`，以下是我自己使用过程中的体会（以下都是基于原生系统测试的）：
 
 ##Remote service
  这里会涉及几个问题：
@@ -49,6 +49,7 @@
 
 ## Local Service
 
+本地服务只需要保证APP从前台退出的时候依然播放，这里通过`startService()`是可以实现，唯一要处理的地方就是从后台REMOVE掉的时候
 
 
 
