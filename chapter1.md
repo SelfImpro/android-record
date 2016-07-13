@@ -10,6 +10,6 @@
 
 
 ##清单文件配置
-在使用MediaPlayer时，用到一些featrue，需要在清单文件中声明
+在使用MediaPlayer时，用到一些featrue，需要在清单文件中声明。
 
 
