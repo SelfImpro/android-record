@@ -65,6 +65,20 @@ wifiLock.release();
 
 ##前台服务
 为什么选择前台服务？是因为前台服务有着更高的等级，系统几乎不会杀死该服务，而这也是我们需要的。开启一个前台服务必须创建`Notification`，然后调用`startForeground()`方法。
+```
+String songName;
+// assign the song name to songName
+PendingIntent pi = PendingIntent.getActivity(getApplicationContext(), 0,
+                new Intent(getApplicationContext(), MainActivity.class),
+                PendingIntent.FLAG_UPDATE_CURRENT);
+Notification notification = new Notification();
+notification.tickerText = text;
+notification.icon = R.drawable.play0;
+notification.flags |= Notification.FLAG_ONGOING_EVENT;
+notification.setLatestEventInfo(getApplicationContext(), "MusicPlayerSample",
+                "Playing: " + songName, pi);
+startForeground(NOTIFICATION_ID, notification);
+```
 
 这里有涉及到一个`remote service` or `local service`，以下是我自己使用过程中的体会（以下都是基于Nexus4，OSVsersion 4.4）：
 
