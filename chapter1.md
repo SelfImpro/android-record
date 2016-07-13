@@ -45,7 +45,11 @@
 
 保证CPU一直运行
 
-
+```
+mMediaPlayer = new MediaPlayer();
+// ... other initialization here ...
+mMediaPlayer.setWakeMode(getApplicationContext(), PowerManager.PARTIAL_WAKE_LOCK);
+```
 
 
 
