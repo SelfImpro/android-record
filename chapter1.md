@@ -222,6 +222,7 @@ public class MediaButtonIntentReceiver extends WakefulBroadcastReceiver {
               final int action = event.getAction();
               final long eventtime = event.getEventTime();
               
+              String command = null;
               switch (keycode) {
                 case KeyEvent.KEYCODE_MEDIA_STOP:
                       command = MusicService.CMDSTOP;
