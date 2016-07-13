@@ -43,7 +43,7 @@
 
 > *Notice*: 要保证只有在需要的时候使用wake locks，因为这样可以减少对电池的伤害
 
-为了在播放过程中保证CPU一直运行，在MediaPlayer初始化的时候调用setWakeMode()
+为了在播放过程中保证CPU一直运行，在MediaPlayer初始化的时候调用`setWakeMode()`
 ```
 mMediaPlayer = new MediaPlayer();
 // ... other initialization here ...
