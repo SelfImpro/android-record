@@ -13,6 +13,10 @@
 在使用MediaPlayer时，用到一些featrue，需要在清单文件中声明。
 
 * `Internet Permission` 如果播放的是网络资源时需要。
+  ```
+  <uses-permission android:name="android.permission.INTERNET" />
+  ```
+* 
 
 
 
