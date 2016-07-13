@@ -1,6 +1,5 @@
 # 音乐播放器
 
-#初体验
 
 说道音乐播放就涉及到两个重要的类`MediaPlayer`、`AuidoManager`。
 * [MediaPlayer](https://developer.android.com/reference/android/media/MediaPlayer.html)  这个类提供了核心的播放音频和视频的API
@@ -33,7 +32,7 @@
 * 使用过程中我们只要记住一点MediaPlayer是基于状态的，进行下一个操作严格依赖上一个状态，否则会抛异常。
 * MediaPlayer是非常消耗系统资源的，再不用的时候要及时释放。
 
-##后台播放
+#后台播放
 
 
 
