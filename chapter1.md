@@ -38,7 +38,7 @@
 
 ##Remote service
  这里会涉及几个问题：
- * 跨进程通讯（AIDL， Message）
+ * 跨进程通讯（AIDL，Message）
  * 多个进程共享数据
 
   
