@@ -37,7 +37,10 @@
 关于应用后台播放应用需要使用Service，这里有涉及到一个`remote service` or `local service`，以下是我自己使用过程中的体会：
 
 ##Remote service
-  首先涉及到一个跨进程通讯，跨进程通讯我用的AIDL（其他的方式像Message的就不做讨论了），
+ 这里会涉及几个问题：
+ * 跨进程通讯
+
+  涉及到一个跨进程通讯，跨进程通讯我用的AIDL（其他的方式像Message的就不做讨论了），
   
 
 ## Local Service
