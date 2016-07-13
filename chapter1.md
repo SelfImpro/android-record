@@ -50,7 +50,7 @@ mMediaPlayer = new MediaPlayer();
 mMediaPlayer.setWakeMode(getApplicationContext(), PowerManager.PARTIAL_WAKE_LOCK);
 ```
 
-如果你需要使用WIFI，你也可以持有WifiLock。但是这时候需要手动去管理。
+如果你需要使用WIFI，你也可以持有WifiLock，但是这时候需要手动去管理。
 ```
 WifiLock wifiLock = ((WifiManager) getSystemService(Context.WIFI_SERVICE))
     .createWifiLock(WifiManager.WIFI_MODE_FULL, "mylock");
