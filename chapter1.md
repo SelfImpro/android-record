@@ -38,10 +38,10 @@
 
 ##Remote service
  这里会涉及几个问题：
- * 跨进程通讯
+ * 跨进程通讯（AIDL， Message）
  * 多个进程共享数据
 
-  涉及到一个跨进程通讯，跨进程通讯我用的AIDL（其他的方式像Message的就不做讨论了），
+  
   
 
 ## Local Service
