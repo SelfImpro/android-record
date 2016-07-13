@@ -29,7 +29,7 @@
 ![](mediaplayer_state_diagram.gif)
 
 
-使用MediaPlayer时prepare的时候我一般会用异步等待，避免ANR。如果是一些比较小的本地音频就没有这个必要了。
+使用MediaPlayer时prepare的时候一般会用异步等待，避免ANR。如果是一些比较小的本地音频就没有这个必要了。使用过程中我们只要记住一点MediaPlayer是基于状态的。
 
 
 
