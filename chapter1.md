@@ -41,7 +41,7 @@
  * 跨进程通讯
  * 多个进程共享数据
 
-  
+  跨进程通讯方式我就不讨论，可以用AIDL，Message
   
 
 ## Local Service
