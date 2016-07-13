@@ -43,8 +43,7 @@
 
 > *Notice*: 要保证只有在需要的时候使用wake locks，因为这样可以减少对电池的伤害
 
-保证CPU一直运行
-
+为了在播放过程中保证CPU一直运行
 ```
 mMediaPlayer = new MediaPlayer();
 // ... other initialization here ...
