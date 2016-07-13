@@ -50,7 +50,7 @@ mMediaPlayer = new MediaPlayer();
 mMediaPlayer.setWakeMode(getApplicationContext(), PowerManager.PARTIAL_WAKE_LOCK);
 ```
 
-然而
+如果你需要使用WIFI，你也可以持有WifiLock。
 
 
 
