@@ -43,7 +43,7 @@
  * 多个进程共享数据<br/>
     共享数据一般用的是 SharedPreferences 和 DataBase。<br/>
     如果是SharedPreferences，这需要将MODE设置为`MODE_MULTI_PROCESS`，但是你会发现这个模式已经被废弃掉了，所以被抛弃了；如果使用`DataBase`则需要使用`Observable`将自己的数据接口暴露出去。
- * 通过远程服务在应用退出或者从后台REMOVE的时候或者从后台remove的时候可以继续播放，当然国产的手机remove的时候依然会kill掉所有相关的服务。
+ * 通过远程服务在应用退出或者从后台remove的时候可以继续播放，当然国产的手机remove的时候依然会kill掉所有相关的服务。
 
   
   
