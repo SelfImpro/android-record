@@ -193,7 +193,11 @@ public class MusicIntentReceiver extends android.content.BroadcastReceiver {
 
 耳机的线控是头戴中的一种，具体实现
 ```
-
+<receiver android:name=".MusicIntentReceiver">
+   <intent-filter>
+      <action android:name="android.intent.action.MEDIA_BUTTON" />
+   </intent-filter>
+</receiver>
 ```
 
 
