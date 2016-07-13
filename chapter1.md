@@ -85,6 +85,24 @@ startForeground(NOTIFICATION_ID, notification);
 stopForeground();
 ```
 
+这里有涉及到一个`remote service` or `local service`，以下是我自己使用过程中的体会（以下都是基于Nexus4，OSVsersion 4.4）：
+
+###Remote service
+ 这里会涉及几个问题：
+ * 跨进程通讯<br/>
+    跨进程通讯方式我就不讨论，可以用AIDL，Message。
+ * 多个进程共享数据<br/>
+    共享数据一般用的是 SharedPreferences 和 DataBase。<br/>
+    如果是SharedPreferences，这需要将MODE设置为`MODE_MULTI_PROCESS`，但是你会发现这个模式已经被废弃掉了，所以被抛弃了；如果使用`DataBase`则需要使用`Observable`将自己的数据接口暴露出去。
+ * 通过远程服务在应用退出或者从后台remove的时候可以继续播放，当然国产的手机remove的时候依然会kill掉所有相关的服务。（具体的效果可以依照网易云音乐来实现，我想他们应该会测试很多种情况，如果他都没办法继续播放就别折腾了）
+
+总得来说用这种方式实现的话会进程通讯和数据同步需要写很多代码。
+
+###Local Service
+
+本地服务只需要保证APP从前台退出的时候依然播放，这里通过`startService()`是可以实现，唯一要处理的地方就是从最近打开应用列表REMOVE掉的时候，后台服务也会被kill掉。有兴趣的可以看看这个帖子[Foreground service killed when receiving broadcast after acitivty swiped away in task list](https://code.google.com/p/android/issues/detail?id=53313)。
+
+
 ##处理audio焦点
 对于一个音乐播放器，焦点的处理显得尤为重要。否则就是个坑。在播放音乐之前要先申请焦点，确认是否可以播放
 ```
@@ -147,22 +165,6 @@ public void onAudioFocusChange(int focusChange) {
 }
 ```
 
-这里有涉及到一个`remote service` or `local service`，以下是我自己使用过程中的体会（以下都是基于Nexus4，OSVsersion 4.4）：
-
-###Remote service
- 这里会涉及几个问题：
- * 跨进程通讯<br/>
-    跨进程通讯方式我就不讨论，可以用AIDL，Message。
- * 多个进程共享数据<br/>
-    共享数据一般用的是 SharedPreferences 和 DataBase。<br/>
-    如果是SharedPreferences，这需要将MODE设置为`MODE_MULTI_PROCESS`，但是你会发现这个模式已经被废弃掉了，所以被抛弃了；如果使用`DataBase`则需要使用`Observable`将自己的数据接口暴露出去。
- * 通过远程服务在应用退出或者从后台remove的时候可以继续播放，当然国产的手机remove的时候依然会kill掉所有相关的服务。（具体的效果可以依照网易云音乐来实现，我想他们应该会测试很多种情况，如果他都没办法继续播放就别折腾了）
-
-总得来说用这种方式实现的话会进程通讯和数据同步需要写很多代码。
-
-###Local Service
-
-本地服务只需要保证APP从前台退出的时候依然播放，这里通过`startService()`是可以实现，唯一要处理的地方就是从最近打开应用列表REMOVE掉的时候，后台服务也会被kill掉。有兴趣的可以看看这个帖子[Foreground service killed when receiving broadcast after acitivty swiped away in task list](https://code.google.com/p/android/issues/detail?id=53313)。
 
 
 
