@@ -16,7 +16,7 @@
   ```
   <uses-permission android:name="android.permission.INTERNET" />
   ```
-* `Wake Lock Permission`
+* `Wake Lock Permission` 当应用在屏幕变暗或者CPU睡眠的过程中继续运行时需要，可以调用`MediaPlayer.setScreenOnWilePlaying()` or `MediaPlayer.setWakeMode()`方法。
 
 
 
