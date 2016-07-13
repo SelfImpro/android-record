@@ -29,7 +29,7 @@
 ![](mediaplayer_state_diagram.gif)
 
 
-使用MediaPlayer时prepare的时候我一般会用异步等待，避免ANR。
+使用MediaPlayer时prepare的时候我一般会用异步等待，避免ANR
 
 
 
