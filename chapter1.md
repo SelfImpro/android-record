@@ -23,7 +23,7 @@
   
 #开始使用
 
-如何使用MediaPlayer播放音频或者视频资源可以参考官网[MediaPlayer类](https://developer.android.com/reference/android/media/MediaPlayer.html)
+如何使用MediaPlayer播放音频或者视频资源可以参考官网[MediaPlayer类](https://developer.android.com/reference/android/media/MediaPlayer.html)，这里我只想讨论说一下播放过程中涉及的状态变化。
 
 
 
