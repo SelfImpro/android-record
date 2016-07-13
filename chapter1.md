@@ -40,7 +40,7 @@
  这里会涉及几个问题：
  * 跨进程通讯<br/>
     跨进程通讯方式我就不讨论，可以用AIDL，Message。
- * 多个进程共享数据
+ * 多个进程共享数据<br/>
     本地数据的保存一般用到Sharedpreference 和 DataBase。
 
   
