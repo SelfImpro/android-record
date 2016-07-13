@@ -95,7 +95,7 @@ if (result != AudioManager.AUDIOFOCUS_REQUEST_GRANTED) {
     // could not get audio focus.
 }
 ```
-同时还要想`AudioManager`注册焦点事件
+在`requestAudioFocus()`方法中的第一个参数是`AudioManager.OnAudioFocusChangeListener`，
 ```
 class MyService extends Service
                 implements AudioManager.OnAudioFocusChangeListener {
@@ -104,6 +104,8 @@ class MyService extends Service
         // Do something based on focus change...
     }
 }
+
+mAudioManger.register
 ```
 
 
