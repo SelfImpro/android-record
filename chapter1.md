@@ -23,6 +23,7 @@
   
 #开始使用
 
+如何使用MediaPlayer播放音频或者视频资源可以参考官网[MediaPlayer](https://developer.android.com/reference/android/media/MediaPlayer.html)
 
 
 
