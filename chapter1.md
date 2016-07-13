@@ -166,7 +166,7 @@ public void onAudioFocusChange(int focusChange) {
 }
 ```
 
-##处理噪音
+##处理噪音以及头戴设备
 
 
 
