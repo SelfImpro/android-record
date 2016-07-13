@@ -201,8 +201,15 @@ public class MusicIntentReceiver extends android.content.BroadcastReceiver {
 ```
 
 ```
+/**
+ * Used to control headset playback.
+ * Single press: pause/resume
+ * Double press: next track
+ * Triple press: previous track
+ * Long press: voice search
+ */
 public class MediaButtonIntentReceiver extends WakefulBroadcastReceiver {
-  
+    
     @Override
     public void onReceive(final Context context, final Intent intent) {
         if (Intent.ACTION_MEDIA_BUTTON.equals(intentAction)){
@@ -216,6 +223,7 @@ public class MediaButtonIntentReceiver extends WakefulBroadcastReceiver {
               final long eventtime = event.getEventTime();
               
               switch (keycode) {
+              
               }
         }
     }
