@@ -23,19 +23,13 @@
   
 #开始使用
 
-如何使用MediaPlayer播放音频或者视频资源可以参考官网[MediaPlayer类](https://developer.android.com/reference/android/media/MediaPlayer.html)，这里我只想说一下播放过程中涉及的状态变化。
+如何使用MediaPlayer播放音频或者视频资源可以参考官网[MediaPlayer类](https://developer.android.com/reference/android/media/MediaPlayer.html)，这里我还是觉得这个张图对整个播放状态描述比较直接，播放的控制类似于一个状态机。
 
-Playback control of audio/video files and streams is managed as a state machine. The following diagram shows the life cycle and the states of a MediaPlayer object driven by the supported playback control operations. The ovals represent the states a MediaPlayer object may reside in. The arcs represent the playback control operations that drive the object state transition. There are two types of arcs. The arcs with a single arrow head represent synchronous method calls, while those with a double arrow head represent asynchronous method calls.
-
-播放的控制类似于一个状态机。
 
 ![](mediaplayer_state_diagram.gif)
 
 
 
 
-
-
-![](https://developer.android.com/images/mediaplayer_state_diagram.gif)
 
 
