@@ -52,6 +52,13 @@ mMediaPlayer.setWakeMode(getApplicationContext(), PowerManager.PARTIAL_WAKE_LOCK
 
 如果你需要使用WIFI，你也可以持有WifiLock。
 
+```
+WifiLock wifiLock = ((WifiManager) getSystemService(Context.WIFI_SERVICE))
+    .createWifiLock(WifiManager.WIFI_MODE_FULL, "mylock");
+
+wifiLock.acquire();
+```
+
 
 
 这里有涉及到一个`remote service` or `local service`，以下是我自己使用过程中的体会（以下都是基于Nexus4，OSVsersion 4.4）：
