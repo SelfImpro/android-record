@@ -214,6 +214,9 @@ public class MediaButtonIntentReceiver extends WakefulBroadcastReceiver {
               final int keycode = event.getKeyCode();
               final int action = event.getAction();
               final long eventtime = event.getEventTime();
+              
+              switch (keycode) {
+              }
         }
     }
 }
