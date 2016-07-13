@@ -95,7 +95,7 @@ if (result != AudioManager.AUDIOFOCUS_REQUEST_GRANTED) {
     // could not get audio focus.
 }
 ```
-在`requestAudioFocus()`方法中的第一个参数是`AudioManager.OnAudioFocusChangeListener`，在焦点发生改变的时候回调用`onAudioFocusChange()`，所以服务要实现该方法
+在`requestAudioFocus()`方法中的第一个参数是`AudioManager.OnAudioFocusChangeListener`，在焦点发生改变的时候回调用`onAudioFocusChange()`，所以服务要实现该方法。
 ```
 class MyService extends Service
                 implements AudioManager.OnAudioFocusChangeListener {
