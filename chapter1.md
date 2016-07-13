@@ -41,7 +41,7 @@
 当设备进入休眠状态时，系统会关掉一些不需要的特性，包括CPU和WIFI模块。然而当你的音乐在后台播放时，为了防止系统影响你的播放。你需要使用`wake locks`，`wake locks`是一种在系统处于空闲状态时告诉系统你需要一些特性。
 
 
-> *Notice*: You should always use wake locks sparingly and hold them only for as long as truly necessary, because they significantly reduce the battery life of the device.
+> *Notice*: 要保证只有在需要的时候使用wake locks，因为这样可以减少对电池的伤害
 
 
 
