@@ -13,3 +13,5 @@
 在使用MediaPlayer时，用到一些featrue，需要在清单文件中声明。
 
 
+
+
