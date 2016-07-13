@@ -36,7 +36,6 @@
 
 关于应用后台播放应用需要使用Service，这里有涉及到一个`remote service` or `local service`，以下是我自己使用过程中的体会：
 
-说到后台播放我们需要保证后台service要长期运行，关于如何保证service长驻这里我就不讨论。
 * 
 
 
