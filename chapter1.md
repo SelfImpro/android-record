@@ -57,7 +57,8 @@ WifiLock wifiLock = ((WifiManager) getSystemService(Context.WIFI_SERVICE))
 
 wifiLock.acquire();
 ```
-当播放结束不在需要访问网络时
+当播放结束不在需要访问网络时，释放WifiLock
+
 ```
 wifiLock.release();
 ```
