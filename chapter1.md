@@ -10,6 +10,6 @@
 
 
 ##清单文件配置
-在使用MediaPlayer时，需要配置一些权限：
+在使用MediaPlayer时，用到一些featrue，需要在清单文件中声明
 
 
