@@ -188,7 +188,6 @@ public class MusicIntentReceiver extends android.content.BroadcastReceiver {
       }
    }
 }
-
 ```
 
 
