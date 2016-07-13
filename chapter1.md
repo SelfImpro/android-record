@@ -19,7 +19,6 @@
 * `Wake Lock Permission` 如果需要应用在屏幕变暗或者CPU睡眠的过程中继续运行，可以调用`MediaPlayer.setScreenOnWilePlaying()` or `MediaPlayer.setWakeMode()`方法，这时就需要这个权限。
 ```
 <uses-permission android:name="android.permission.WAKE_LOCK" />
-
 ```
 
 
