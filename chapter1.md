@@ -97,7 +97,13 @@ if (result != AudioManager.AUDIOFOCUS_REQUEST_GRANTED) {
 ```
 同时还要想`AudioManager`注册焦点事件
 ```
-
+class MyService extends Service
+                implements AudioManager.OnAudioFocusChangeListener {
+    // ....
+    public void onAudioFocusChange(int focusChange) {
+        // Do something based on focus change...
+    }
+}
 ```
 
 
