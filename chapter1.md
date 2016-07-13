@@ -172,7 +172,7 @@ public void onAudioFocusChange(int focusChange) {
 ```
 <receiver android:name=".MusicIntentReceiver">
    <intent-filter>
-   <action android:name="android.intent.action.MEDIA_BUTTON" />
+       <action android:name="android.intent.action.MEDIA_BUTTON" />
       <action android:name="android.media.AUDIO_BECOMING_NOISY" />
    </intent-filter>
 </receiver>
