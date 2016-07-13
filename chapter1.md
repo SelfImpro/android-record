@@ -149,7 +149,7 @@ public void onAudioFocusChange(int focusChange) {
 
 这里有涉及到一个`remote service` or `local service`，以下是我自己使用过程中的体会（以下都是基于Nexus4，OSVsersion 4.4）：
 
-##Remote service
+###Remote service
  这里会涉及几个问题：
  * 跨进程通讯<br/>
     跨进程通讯方式我就不讨论，可以用AIDL，Message。
@@ -160,9 +160,10 @@ public void onAudioFocusChange(int focusChange) {
 
 总得来说用这种方式实现的话会进程通讯和数据同步需要写很多代码。
 
-## Local Service
+###Local Service
 
 本地服务只需要保证APP从前台退出的时候依然播放，这里通过`startService()`是可以实现，唯一要处理的地方就是从最近打开应用列表REMOVE掉的时候，后台服务也会被kill掉。有兴趣的可以看看这个帖子[Foreground service killed when receiving broadcast after acitivty swiped away in task list](https://code.google.com/p/android/issues/detail?id=53313)。
+
 
 
 
