@@ -81,7 +81,7 @@ startForeground(NOTIFICATION_ID, notification);
 ```
 你只能在你需要的时候维持前台状态，一旦不需要的时候要及时释放
 ```
-
+stopForeground();
 ```
 
 
