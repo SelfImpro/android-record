@@ -34,7 +34,7 @@
 
 #后台播放
 
-关于应用后台播放应用需要使用Service，这里有涉及到一个`remote service` or `local service`
+关于应用后台播放应用需要使用Service，这里有涉及到一个`remote service` or `local service`.
 
 
 
