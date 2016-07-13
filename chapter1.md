@@ -102,7 +102,6 @@ stopForeground();
 
 本地服务只需要保证APP从前台退出的时候依然播放，这里通过`startService()`是可以实现，唯一要处理的地方就是从最近打开应用列表REMOVE掉的时候，后台服务也会被kill掉。有兴趣的可以看看这个帖子[Foreground service killed when receiving broadcast after acitivty swiped away in task list](https://code.google.com/p/android/issues/detail?id=53313)。
 
-
 总的来说我还是觉得直接用Local Service实现就够了，能够实现同样的效果，工作量也小，何乐而不为呢。
 
 ##处理audio焦点
