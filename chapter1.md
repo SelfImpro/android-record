@@ -16,7 +16,7 @@
   ```
   <uses-permission android:name="android.permission.INTERNET" />
   ```
-* 
+* `Wake Lock Permission`
 
 
 
