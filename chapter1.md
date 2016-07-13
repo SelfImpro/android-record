@@ -250,6 +250,9 @@ public class MediaButtonIntentReceiver extends WakefulBroadcastReceiver {
 ```
 
 
+在5.0及以上系统出现了一个新的类，用于音乐播放`MediaSessionCompat`
+
+
 
 
 
