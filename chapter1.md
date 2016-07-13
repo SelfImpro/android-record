@@ -206,7 +206,14 @@ public class MediaButtonIntentReceiver extends WakefulBroadcastReceiver {
     @Override
     public void onReceive(final Context context, final Intent intent) {
         if (Intent.ACTION_MEDIA_BUTTON.equals(intentAction)){
-            
+              final KeyEvent event = intent.getParcelableExtra(Intent.EXTRA_KEY_EVENT);
+              if (event == null) {
+                  return;
+              }
+
+              final int keycode = event.getKeyCode();
+              final int action = event.getAction();
+              final long eventtime = event.getEventTime();
         }
     }
 }
