@@ -1,3 +1,4 @@
+
 [TOC]
 #音乐播放器
 
@@ -106,8 +107,7 @@ class MyService extends Service
 }
 ```
 
-`focusChange`参数会返回大年的焦点状态
-
+`focusChange`参数会返回当前的焦点状态
 
 
 
