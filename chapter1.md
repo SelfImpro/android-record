@@ -200,6 +200,11 @@ public class MusicIntentReceiver extends android.content.BroadcastReceiver {
 </receiver>
 ```
 
+```
+public class MediaButtonIntentReceiver extends WakefulBroadcastReceiver {
+}
+```
+
 
 
 
