@@ -23,7 +23,7 @@
   
 #开始使用
 
-如何使用MediaPlayer播放音频或者视频资源可以参考官网[MediaPlayer类](https://developer.android.com/reference/android/media/MediaPlayer.html)，这里我还是觉得这个张图对整个播放状态描述比较直接，播放的控制类似于一个状态机。
+如何使用MediaPlayer播放音频或者视频资源可以参考官网[MediaPlayer类](https://developer.android.com/reference/android/media/MediaPlayer.html)，播放的控制类似于一个状态机，这里我还是觉得这个张图对整个播放状态描述比较直接。
 
 
 ![](mediaplayer_state_diagram.gif)
