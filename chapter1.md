@@ -223,7 +223,25 @@ public class MediaButtonIntentReceiver extends WakefulBroadcastReceiver {
               final long eventtime = event.getEventTime();
               
               switch (keycode) {
-              
+                case KeyEvent.KEYCODE_MEDIA_STOP:
+                      command = MusicService.CMDSTOP;
+                      break;
+                  case KeyEvent.KEYCODE_HEADSETHOOK:
+                  case KeyEvent.KEYCODE_MEDIA_PLAY_PAUSE:
+                      command = MusicService.CMDTOGGLEPAUSE;
+                      break;
+                  case KeyEvent.KEYCODE_MEDIA_NEXT:
+                      command = MusicService.CMDNEXT;
+                      break;
+                  case KeyEvent.KEYCODE_MEDIA_PREVIOUS:
+                      command = MusicService.CMDPREVIOUS;
+                      break;
+                  case KeyEvent.KEYCODE_MEDIA_PAUSE:
+                      command = MusicService.CMDPAUSE;
+                      break;
+                  case KeyEvent.KEYCODE_MEDIA_PLAY:
+                      command = MusicService.CMDPLAY;
+                      break;
               }
         }
     }
