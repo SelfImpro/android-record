@@ -41,7 +41,8 @@
  * 跨进程通讯<br/>
     跨进程通讯方式我就不讨论，可以用AIDL，Message。
  * 多个进程共享数据<br/>
-    共享数据一般用的是 SharedPreferences 和 DataBase。如果是SharedPreferences，这需要将MODE设置为`MODE_MULTI_PROCESS，但是你会发现这个模式已经被废弃掉了，所以被抛弃了。
+    共享数据一般用的是 SharedPreferences 和 DataBase。<br/>
+如果是SharedPreferences，这需要将MODE设置为`MODE_MULTI_PROCESS，但是你会发现这个模式已经被废弃掉了，所以被抛弃了。
 
   
   
