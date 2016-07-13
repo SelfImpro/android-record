@@ -169,6 +169,13 @@ public void onAudioFocusChange(int focusChange) {
 ##处理噪音以及头戴设备
 
 当我们插拔耳机的时候会发现有一些噪音，一般音乐播放器都是暂停播放处理。这时候需要监听一个广播
+```
+<receiver android:name=".MusicIntentReceiver">
+   <intent-filter>
+      <action android:name="android.media.AUDIO_BECOMING_NOISY" />
+   </intent-filter>
+</receiver>
+```
 
 
 
